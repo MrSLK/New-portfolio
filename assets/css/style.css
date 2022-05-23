@@ -410,6 +410,102 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-about:hover {
   background: #3dc8b7;
 }
+
+#hero .shape {
+  position: absolute;
+}
+
+#hero .shape.shape-1 {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  left: 130px;
+  top: 1%;
+  border-radius: 50%;
+  background: #637ae4;
+  animation: animation-1 2s linear infinite;
+}
+
+#hero .shape.shape-2 {
+  width: 39px;
+  height: 39px;
+  left: 150px;
+  bottom: 40px;
+  border-radius: 50%;
+  background: #0898e7;
+  animation: animation-1 2s linear infinite;
+}
+#hero .shape.shape-3 {
+  width: 19px;
+  height: 19px;
+  left: 26px;
+  bottom: 25%;
+  border-radius: 50%;
+  background: #ff846f;
+  animation: animation-1 2s linear infinite;
+}
+
+
+#hero .shape.shape-4 {
+  width: 39px;
+  height: 39px;
+  left: 40%;
+  top: 175px;
+  border-radius: 50%;
+  background: #4ebaf5;
+  animation: animation-1 2s linear infinite;
+}
+
+#hero .shape.shape-5 {
+  width: 19px;
+  height: 19px;
+  left: 50%;
+  bottom: 20%;
+  border-radius: 50%;
+  background: #ff5b56;
+  animation: animation-1 2s linear infinite;
+}
+.hero .shape.shape-6 {
+  width: 14px;
+  height: 14px;
+  left: 45%;
+  bottom: 70%;
+  border-radius: 50%;
+  background: #4ebaf5;
+  animation: animation-1 2s linear infinite;
+}
+
+#hero .shape.shape-7 {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  left: 80%;
+  top: 40%;
+  border-radius: 50%;
+  background: red;
+  animation: animation-1 2s linear infinite;
+}
+
+#hero .shape.shape-8 {
+  width: 19px;
+  height: 19px;
+  left: 80%;
+  top: 40%;
+  border-radius: 50%;
+  background: #ff846f;
+  animation: animation-1 2s linear infinite;
+}
+
+#hero .shape.shape-9 {
+  width: 39px;
+  height: 39px;
+  left: 40%;
+  top: 175px;
+  border-radius: 50%;
+  background: #4ebaf5;
+  animation: animation-1 2s linear infinite;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -432,6 +528,32 @@ h1, h2, h3, h4, h5, h6 {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+@keyframes bounceTop-1 {
+
+  0%,
+  100% {
+      transform: translateY(-30px);
+  }
+
+  50% {
+      transform: translateY(0px);
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.2);
+  }
+
+  100% {
+      transform: scale(1);
   }
 }
 
