@@ -27,8 +27,8 @@ npm start
 
 Connect the repository to Netlify and deploy from the repository root. Netlify
 uses the build command in `netlify.toml`, reads the Node.js version from
-`.nvmrc`, and automatically configures its Next.js adapter. Leave the publish
-directory unset so the adapter can handle the Next.js build output.
+`.nvmrc`, and automatically configures its Next.js adapter. The publish
+directory is set to `.next`, Next.js's build output directory.
 
 ## Code quality
 
