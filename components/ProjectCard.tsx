@@ -13,7 +13,7 @@ export default function ProjectCard({
   return (
     <Reveal
       delay={index * 0.06}
-      className={`border-line group flex h-full flex-col rounded-card border bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-soft ${project.featured ? "md:row-span-2" : ""}`}
+      className={`border-line group flex h-full flex-col rounded-card border bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-soft`}
     >
       <div className="flex items-start justify-between gap-4">
         <span className="text-[10px] font-extrabold uppercase tracking-[.14em] text-muted">
@@ -31,7 +31,7 @@ export default function ProjectCard({
         {project.stack.map((tag) => (
           <span
             key={tag}
-            className="border-line bg-page rounded-lg border px-2.5 py-1.5 text-[10px] font-bold text-muted"
+            className="border-line rounded-lg border bg-page px-2.5 py-1.5 text-[10px] font-bold text-muted"
           >
             {tag}
           </span>
