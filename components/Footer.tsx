@@ -39,10 +39,6 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="container pb-5 text-[10px] text-muted">
-        Tool-assisted workflow acknowledged. Verify project status, links,
-        employer names, dates, and contact details before publishing.
-      </div>
     </footer>
   );
 }

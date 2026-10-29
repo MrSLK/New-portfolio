@@ -11,6 +11,8 @@ import ProjectCard from "@/components/ProjectCard";
 import SectionHeading from "@/components/SectionHeading";
 import CopyEmailButton from "@/components/CopyEmailButton";
 import { experience, profile, projects, skills } from "@/lib/portfolio";
+import Image from "next/image";
+
 export default function HomePage() {
   return (
     <>
@@ -56,9 +58,13 @@ export default function HomePage() {
           >
             <div className="border-line flex items-center justify-between border-b pb-5">
               <div className="flex items-center gap-3">
-                <div className="grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br from-brand to-violet-400 font-extrabold text-white">
-                  KS
-                </div>
+                <Image
+                  src="/logo.png"
+                  alt="Portfolio logo"
+                  width={40}
+                  height={40}
+                  priority
+                />
                 <div>
                   <p className="font-extrabold tracking-tight">
                     {profile.name}
@@ -118,11 +124,6 @@ export default function HomePage() {
               <ProjectCard key={project.number} project={project} index={i} />
             ))}
           </div>
-          <p className="mt-5 text-xs text-muted">
-            Project note: verify live deployments, GitHub repositories, and
-            public project status before publishing. Some entries are
-            prototypes, research, or work in progress.
-          </p>
           <div className="mt-6">
             <Link
               href="/work"
@@ -215,7 +216,7 @@ export default function HomePage() {
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="bg-page rounded-lg px-2.5 py-1.5 text-[11px] font-semibold text-muted"
+                      className="rounded-lg bg-page px-2.5 py-1.5 text-[11px] font-semibold text-muted"
                     >
                       {item}
                     </span>

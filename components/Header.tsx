@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
+
 const links = [
   { href: "/about", label: "About" },
   { href: "/work", label: "Work" },
@@ -11,16 +13,20 @@ const links = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="border-line/80 bg-page/90 sticky top-0 z-50 border-b backdrop-blur-xl">
+    <header className="border-line/80 sticky top-0 z-50 border-b bg-page backdrop-blur-xl">
       <div className="container flex min-h-[72px] items-center justify-between gap-5">
         <Link
           href="/"
           className="flex items-center gap-3 font-extrabold tracking-tight"
           onClick={() => setOpen(false)}
         >
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand text-sm text-white">
-            KS
-          </span>
+          <Image
+            src="/logo.png"
+            alt="Portfolio logo"
+            width={40}
+            height={40}
+            priority
+          />
           <span>
             koenaite<span className="text-brand">.dev</span>
           </span>
@@ -35,7 +41,7 @@ export default function Header() {
         </button>
         <nav
           aria-label="Main navigation"
-          className={`${open ? "flex" : "hidden"} border-line bg-page absolute left-0 right-0 top-[71px] flex-col border-b px-6 pb-5 md:static md:flex md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0`}
+          className={`${open ? "flex" : "hidden"} border-line absolute left-0 right-0 top-[71px] flex-col border-b bg-page px-6 pb-5 md:static md:flex md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0`}
         >
           {links.map((link) => (
             <Link

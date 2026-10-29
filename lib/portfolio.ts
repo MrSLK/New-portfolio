@@ -19,10 +19,9 @@ export const projects = [
     description:
       "A used-car listing assistant designed to make vehicle listings and evaluation workflows easier to manage. Combines a React interface with AI-assisted features and cloud-backed data, with the focus on a useful end-to-end product rather than a disconnected demo.",
     stack: ["React", "Vite", "Firebase", "Gemini API", "Cloudinary"],
-    github: "https://github.com/",
-    demo: "#contact",
-    featured: true,
-    status: "Project link to verify",
+    github: "https://github.com/MrSLK/isj-frontend",
+    demo: "https://isj-frontend.web.app",
+    status: "Live",
   },
   {
     number: "02",
@@ -31,10 +30,10 @@ export const projects = [
     icon: "▦",
     description:
       "A stokvel management platform concept for organising group membership, contributions, and accountability. A NestJS and MongoDB backend structures roles, invitations, and member activity to support clear, maintainable group workflows.",
-    stack: ["Next.js", "NestJS", "MongoDB", "JWT"],
+    stack: ["Next.js", "NestJS", "MongoDB", "Cloudinary"],
     github: "https://github.com/",
     demo: "#contact",
-    status: "Project link to verify",
+    status: "Live",
   },
   {
     number: "03",
@@ -48,8 +47,44 @@ export const projects = [
     demo: "#contact",
     status: "Research project",
   },
+  {
+    number: "04",
+    title: "Mulalo's Birthday Wishlist",
+    type: "Personal / Web App",
+    icon: "♡",
+    description:
+      "A personalised birthday wishlist website designed to bring gift ideas together in one convenient place. A simple, engaging web experience that makes it easier to explore and share birthday wishes.",
+    stack: ["Web Development", "Responsive UI", "Vite", "NestJS", "MongoDB"],
+    github: "#contact",
+    demo: "https://lalosbirthdaywishlist.netlify.app/",
+    status: "Live",
+  },
+  {
+    number: "05",
+    title: "DriveShare",
+    type: "Mobility / Platform",
+    icon: "↗",
+    description:
+      "A platform concept connecting people who need reliable drivers with drivers looking to offer their services. Designed to make finding and offering driving services more accessible through a straightforward online experience.",
+    stack: ["Web Development", "Responsive UI", "Vite", "ExpressJS", "MongoDB"],
+    github: "#contact",
+    demo: "https://dtd-driveshare.netlify.app/",
+    status: "Live",
+  },
+  {
+    number: "06",
+    title: "Mosomane Inc.",
+    type: "Business / Legal Website",
+    icon: "§",
+    description:
+      "A professional website for a law firm, presenting its brand and services through a dedicated online presence. Built to give the firm a clear, accessible digital platform for introducing its business to prospective clients.",
+    stack: ["Web Development", "Business Website", "Responsive UI"],
+    github: "#contact",
+    demo: "https://mosomane-inc.netlify.app/",
+    status: "Live",
+  },
   // {
-  //   number: "04",
+  //   number: "07",
   //   title: "TradieOS",
   //   type: "Product in progress",
   //   icon: "↗",

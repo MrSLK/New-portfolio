@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ProjectCard from "@/components/ProjectCard";
 import SectionHeading from "@/components/SectionHeading";
 import { projects } from "@/lib/portfolio";
+
 export const metadata: Metadata = {
   title: "Work | Koenaite Shiba",
   description: "Selected software projects, product prototypes, and research.",
